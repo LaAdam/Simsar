@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  direction: rtl; 
+}
+
+header {
+  background-color: #0e4d92;
+  padding: 20px 40px;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: ltr; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-text {
+  text-align: left; 
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.home-button a {
+  padding: 8px 16px;
+  background-color: #0e4d92;
+  color:#ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.home-button a:hover {
+  background-color: #0e4d92;
+}
+
+.details-container {
+  display: flex;
+   flex-direction: row-reverse;
+  align-items: flex-start;
+  padding: 40px 60px;
+  gap: 40px;
+    flex-wrap: nowrap;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.image-box iframe {
+    width: 100%;
+    border-radius: 15px;
+    height: 400px;
+}
+
+.info-box {
+  flex: 1;
+  padding-top: 20px;
+}
+
+.info-box h1 {
+  font-size: 45px;
+  color: #0e4d92;
+  margin-bottom: 20px;
+}
+
+.info-box p {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+#deletePropertyBtn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 15px;
+    width: 150px;
+    transition: 0.3s;
+}
+
+#deletePropertyBtn:hover {
+    background-color: #c9302c;
+}
+
+#deleteMsg {
+    margin-top: 10px;
+    color: #b00;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .details-container {
+    flex-direction: column; 
+    padding: 15px;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .image-box {
+    width: 100%;
+  }
+
+  .image-box iframe {
+    height: 250px;  
+  }
+
+  .info-box {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .info-box h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .info-box p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #deletePropertyBtn {
+    width: 90%;
+    max-width: 300px;
+    font-size: 18px;
+    margin: 15px auto 0 auto; 
+    display: block;
+  }
+}
